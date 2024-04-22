@@ -2,7 +2,8 @@ import { Route, Routes } from "react-router-dom";
 
 import HomePage from "./pages/Home";
 import LoginPage from "./pages/Login";
-import RegisterPage from "./pages/Register";
+import ProfilePage from "./pages/Profile";
+import RegisterWithCustomHooks from "./pages/RegisterWithCustomHooks";
 
 const App = () => {
   return (
@@ -17,7 +18,11 @@ const App = () => {
       />
       <Route
         path="/register"
-        element={<RegisterPage />}
+        element={<RegisterWithCustomHooks />}
+      />
+      <Route
+        path="/profile"
+        element={<ProfilePage />}
       />
     </Routes>
   );
